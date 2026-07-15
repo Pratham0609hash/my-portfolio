@@ -1,11 +1,8 @@
 import type { NextConfig } from "next";
 
-const isGithubActions = process.env.GITHUB_ACTIONS || false;
-let repo = "my-portfolio"
-
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: isGithubActions ? `/${repo}` : "",
+  output: 'export',
+  basePath: '/my-portfolio',
   images: {
     unoptimized: true,
   },
